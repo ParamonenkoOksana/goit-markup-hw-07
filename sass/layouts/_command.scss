@@ -92,9 +92,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   .command-soc-link:hover &,
-.command-soc-link:focus & {
-  fill: var(--primery-background-color);
+  .command-soc-link:focus & {
+    fill: var(--primery-background-color);
+  }
 }
-
-}
-

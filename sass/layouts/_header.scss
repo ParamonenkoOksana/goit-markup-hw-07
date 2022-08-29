@@ -17,6 +17,8 @@
 
 .header-logo {
   margin-right: 93px;
+
+  color: #000000;
 }
 
 .header-logo,
@@ -29,12 +31,12 @@
   text-decoration: none;
 }
 
-.header-logo {
-  color: #000000;
-}
-
 .current {
   color: var(--accent-color);
+
+  .header-list & {
+    color: var(--accent-color);
+  }
 }
 
 .header-list {
@@ -77,10 +79,6 @@
   height: 4px;
   border-radius: 2px;
   background-color: currentColor;
-}
-
-.header-list .current {
-  color: var(--accent-color);
 }
 
 .header-contacs {
