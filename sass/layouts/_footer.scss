@@ -18,10 +18,9 @@
   margin-bottom: 20px;
 
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+
+  @include font($fw:700, $fs:26, $lh:1.19);
+ 
   text-decoration: none;
   color: var(--text-color-white);
 }
@@ -31,9 +30,8 @@
 }
 
 .footer-list .aside {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font($fw:null, $lh:1.71);
+ 
   color: var(--secondary-text-color);
 
   transition-property: color;
@@ -59,10 +57,8 @@
 }
 
 .footer-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font($fw:700);
+  
   text-transform: uppercase;
   margin-bottom: 20px;
 
@@ -99,10 +95,8 @@
   display: block;
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font($fw:700);
+
   text-transform: uppercase;
 
   color: var(--primery-background-color);
@@ -113,10 +107,8 @@
 }
 
 .distribution-group::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
+  @include font(null, $fs:16, $lh:1.25);
+ 
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -146,9 +138,8 @@
 
   border-radius: 4px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($fw:700, $fs:16, $lh:1.88, $ls:0.06em);
+  
   color: var(--text-color-white);
 
   &:hover,

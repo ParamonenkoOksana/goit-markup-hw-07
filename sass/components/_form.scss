@@ -6,9 +6,8 @@
   display: block;
 
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+
+  @include font(null, $fs:12, $lh:1.17, $ls:0.01em);
 
   color: var(--text-color-gray);
 }
@@ -23,9 +22,7 @@
 
   padding-left: 42px;
 
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  @include font($fw:null, $ls:0.01em);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -38,10 +35,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-  outline-color: var(--accent-color);
+    outline-color: var(--accent-color);
+  }
 }
-}
-
 
 .input-icon {
   position: absolute;
@@ -55,8 +51,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   .form-input:focus + & {
-  fill: var(--accent-color);
-}
+    fill: var(--accent-color);
+  }
 }
 
 .input-comment {
@@ -74,10 +70,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
+  @include font(null, $fs:12, $lh:1.17, $ls:0.01em);
+  
   color: var(--primery-text-color);
 
   &:focus {
@@ -85,10 +79,8 @@
   }
 
   &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-
+    @include font($fw:null, $ls:0.01em);
+  
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -103,11 +95,9 @@
   align-items: center;
 
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
 
-  letter-spacing: 0.03em;
-
+  @include font($fw:null, $lh:1.71);
+ 
   color: var(--text-color-gray);
 }
 
@@ -167,12 +157,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($fw:700, $fs:16, $lh:1.88, $ls:0.06em);
+
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+
   color: var(--text-color-white);
 }
 

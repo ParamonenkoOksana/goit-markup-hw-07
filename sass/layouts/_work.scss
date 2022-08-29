@@ -58,10 +58,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* overflow: auto; */
 
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-
+  @include font($fw:null, $fs:18, $lh:1.56);
+  
   color: var(--text-color-white);
   background-color: var(--background-color-overlay);
 
@@ -73,15 +71,12 @@
 .work-title {
   margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font($fw:700, $fs:18, $lh:2, $ls:0.06em);
+ 
   color: var(--primery-text-color);
 }
 .work-text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  @include font($fw:null, $fs:16, $lh:1.88);
+ 
   color: var(--text-color-gray);
 }

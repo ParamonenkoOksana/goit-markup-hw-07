@@ -5,11 +5,10 @@
 .command-title {
   margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font($fw:700, $fs:36, $lh:1.16);
+  
   text-align: center;
-  letter-spacing: 0.03em;
+  
   color: var(--primery-text-color);
 }
 
@@ -36,20 +35,19 @@
 .command-after-title {
   margin-bottom: 10px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font($fs:16, $lh:1.19);
+  
   text-align: center;
-  letter-spacing: 0.03em;
+ 
   color: var(--primery-text-color);
 }
 
 .command-text {
-  font-size: 16px;
-  text-align: center;
   margin-bottom: 16px;
+  text-align: center;
 
-  letter-spacing: 0.03em;
+  @include font($fw:null, $fs:16, $lh:1.17);
+  
   color: var(--text-color-gray);
 }
 
