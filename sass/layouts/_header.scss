@@ -1,27 +1,27 @@
-.header-page {
+.header__page {
   /* padding-top: 24px;
   padding-bottom: 24px; */
   border-bottom: 1px solid #ececec;
 }
 
-.header-page.container {
+.header__page.container {
   display: flex;
 }
 
-.header-nav,
-.header-list,
-.header-contacs {
+.navigation,
+.navigation__list,
+.contacs {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.navigation__logo {
   margin-right: 93px;
 
   color: #000000;
 }
 
-.header-logo,
+.navigation__logo,
 .current {
   font-family: 'Raleway', sans-serif;
   @include font($fw:700, $fs:26, $lh:1.19);
@@ -32,19 +32,19 @@
 .current {
   color: var(--accent-color);
 
-  .header-list & {
+  .navigation__list & {
     color: var(--accent-color);
   }
 }
 
-.header-list {
+.navigation__list {
   display: flex;
   column-gap: 50px;
 }
 
-/* .header-item:not(:last-child) {margin-right: 50px;} */
+/* .navigation__item:not(:last-child) {margin-right: 50px;} */
 
-.header-link {
+.navigation__link {
   padding: 32px 2px;
   display: block;
   position: relative;
@@ -54,7 +54,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: inherit;
-  
+
   @include font($ls:0.02em);
   
   color: var(--primery-text-color);
@@ -65,7 +65,7 @@
   }
 }
 
-.header-link.current::after {
+.navigation__link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -78,13 +78,13 @@
   background-color: currentColor;
 }
 
-.header-contacs {
+.contacs {
   margin-left: auto;
   column-gap: 50px;
 }
 
-.header-mail,
-.header-tel {
+.contacs__mail,
+.contacs__tel {
   display: flex;
   padding: 32px 2px;
   align-items: center;
@@ -92,7 +92,10 @@
   width: 100%;
 
   @include font($ls:0.02em);
- 
+  
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--text-color-gray);
 
   transition-property: color;
@@ -100,17 +103,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-mail:hover,
-.header-mail:focus {
+.contacs__mail:hover,
+.contacs__mail:focus {
   color: var(--accent-color);
 }
 
-.header-tel:hover,
-.header-tel:focus {
+.contacs__tel:hover,
+.contacs__tel:focus {
   color: var(--accent-color);
 }
 
-.header-contacs-icon {
+.contacs__icon {
   fill: currentColor;
   margin-right: 10px;
 }
