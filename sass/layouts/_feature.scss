@@ -1,10 +1,10 @@
-.feature-list {
+.feature__list {
     display: flex;
     column-gap: 30px;
     align-items: center;
   }
   
-  .feature-icon {
+  .feature__icon {
     display: flex;
     width: 270px;
     height: 120px;
@@ -17,7 +17,7 @@
     background-color: var(--primery-background-color-btn);
   }
   
-  .feature-title {
+  .feature__title {
     margin-top: 0;
     margin-bottom: 10px;
   
@@ -27,7 +27,7 @@
     color: var(--primery-text-color);
   }
   
-  .feature-text {
+  .feature__text {
     max-width: 270px;
 
     @include font($fw:null, $lh:1.71);
