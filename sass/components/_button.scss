@@ -19,11 +19,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include font($fw:700, $fs:16, $lh:1.88, $ls:0.06em);
+  @include font($fw: 700, $fs: 16, $lh: 1.88, $ls: 0.06em);
 
   align-items: center;
   text-align: center;
-  
+
   color: var(--text-color-white);
 
   &:hover,
@@ -44,10 +44,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include font( $fs:16, $lh:1.62);
-  
+  @include font($fs: 16, $lh: 1.62);
+
   text-align: center;
-  
+
   color: var(--primery-text-color);
   background-color: var(--primery-background-color-btn);
 }

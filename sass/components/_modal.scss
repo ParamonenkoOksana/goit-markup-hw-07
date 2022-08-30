@@ -88,9 +88,9 @@
 .modal-title {
   margin-bottom: 12px;
 
-  @include font($fw:700, $fs:20, $lh:1.15);
-  
+  @include font($fw: 700, $fs: 20, $lh: 1.15);
+
   text-align: center;
-  
+
   color: var(--primery-text-color);
 }

@@ -2,10 +2,10 @@
   margin-bottom: 50px;
   align-items: center;
 
-  @include font($fw:700, $fs:36, $lh:1.17);
+  @include font($fw: 700, $fs: 36, $lh: 1.17);
 
   text-align: center;
-  
+
   color: var(--primery-text-color);
 }
 

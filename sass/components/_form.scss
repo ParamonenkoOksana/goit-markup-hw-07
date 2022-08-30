@@ -7,7 +7,7 @@
 
   margin-bottom: 4px;
 
-  @include font(null, $fs:12, $lh:1.17, $ls:0.01em);
+  @include font(null, $fs: 12, $lh: 1.17, $ls: 0.01em);
 
   color: var(--text-color-gray);
 }
@@ -22,7 +22,7 @@
 
   padding-left: 42px;
 
-  @include font($fw:null, $ls:0.01em);
+  @include font($fw: null, $ls: 0.01em);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -70,8 +70,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  @include font(null, $fs:12, $lh:1.17, $ls:0.01em);
-  
+  @include font(null, $fs: 12, $lh: 1.17, $ls: 0.01em);
+
   color: var(--primery-text-color);
 
   &:focus {
@@ -79,8 +79,8 @@
   }
 
   &::placeholder {
-    @include font($fw:null, $ls:0.01em);
-  
+    @include font($fw: null, $ls: 0.01em);
+
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -96,8 +96,8 @@
 
   margin-bottom: 30px;
 
-  @include font($fw:null, $lh:1.71);
- 
+  @include font($fw: null, $lh: 1.71);
+
   color: var(--text-color-gray);
 }
 
@@ -157,7 +157,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include font($fw:700, $fs:16, $lh:1.88, $ls:0.06em);
+  @include font($fw: 700, $fs: 16, $lh: 1.88, $ls: 0.06em);
 
   align-items: center;
   text-align: center;

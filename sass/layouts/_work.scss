@@ -58,8 +58,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* overflow: auto; */
 
-  @include font($fw:null, $fs:18, $lh:1.56);
-  
+  @include font($fw: null, $fs: 18, $lh: 1.56);
+
   color: var(--text-color-white);
   background-color: var(--background-color-overlay);
 
@@ -71,12 +71,12 @@
 .work-title {
   margin-bottom: 4px;
 
-  @include font($fw:700, $fs:18, $lh:2, $ls:0.06em);
- 
+  @include font($fw: 700, $fs: 18, $lh: 2, $ls: 0.06em);
+
   color: var(--primery-text-color);
 }
 .work-text {
-  @include font($fw:null, $fs:16, $lh:1.88);
- 
+  @include font($fw: null, $fs: 16, $lh: 1.88);
+
   color: var(--text-color-gray);
 }
