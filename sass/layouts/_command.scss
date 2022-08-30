@@ -2,22 +2,22 @@
   background-color: #f5f4fa;
 }
 
-.command-title {
+.command__title {
   margin-bottom: 50px;
 
-  @include font($fw:700, $fs:36, $lh:1.16);
-  
+  @include font($fw: 700, $fs: 36, $lh: 1.16);
+
   text-align: center;
-  
+
   color: var(--primery-text-color);
 }
 
-.command-list {
+.command__list {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-.command-item {
+.command__item {
   width: calc((100% - 90px) / 4);
 
   background: var(--primery-background-color);
@@ -25,40 +25,39 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command-wrap {
+.command__wrap {
   padding-top: 30px;
   padding-bottom: 30px;
   /* padding-left: 5px;
     padding-right: 5px; */
 }
 
-.command-after-title {
+.command__after-title {
   margin-bottom: 10px;
 
-  @include font($fs:16, $lh:1.19);
-  
+  @include font($fs: 16, $lh: 1.19);
+
   text-align: center;
- 
+
   color: var(--primery-text-color);
 }
 
-.command-text {
+.command__text {
   margin-bottom: 16px;
   text-align: center;
 
-  @include font($fw:null, $fs:16, $lh:1.17);
-  
+  @include font($fw: null, $fs: 16, $lh: 1.17);
+
   color: var(--text-color-gray);
 }
 
-.command-soc,
-.footer-soc {
+.command__soc {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.command-soc-link {
+.soc__link {
   background-color: var(--primery-background-color);
 
   &:hover,
@@ -67,8 +66,7 @@
   }
 }
 
-.command-soc-link,
-.footer-soc-link {
+.soc__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -82,15 +80,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command-soc-icon {
+.soc__icon {
   fill: var(--primery-icon-background);
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .command-soc-link:hover &,
-  .command-soc-link:focus & {
+  .soc__link:hover &,
+  .soc__link:focus & {
     fill: var(--primery-background-color);
   }
 }
